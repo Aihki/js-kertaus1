@@ -1,6 +1,6 @@
 'use strict';
 
-const number = prompt('give your assesment');
+const number = +prompt('give your assesment');
 
 console.log(number);
 

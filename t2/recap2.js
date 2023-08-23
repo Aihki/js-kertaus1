@@ -1,21 +1,11 @@
 'use strict';
 
-const cordinationOne = +prompt(
-  'give first x and y cordinations, put space between the numbers'
-);
-const cordinationTwo = +prompt(
-  'give second x and y cordinations, put space between the numbers'
-);
+const x1 = prompt('give first x cordination');
+const x2 = prompt('give second x cordination');
+const y1 = prompt('give  firsty cordination');
+const y2 = prompt('give second y cordination');
 
-const first = cordinationOne.split('');
-const x1 = first[0];
-const y1 = first[2];
-
-const second = cordinationTwo.split('');
-const x2 = second[0];
-const y2 = second[2];
-
-const distance = Math.sqrt((x2 - x1) ^ (2 + (y2 - y1)) ^ 2);
+const distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 
 console.log(distance);
 document.getElementById(
